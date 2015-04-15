@@ -23,8 +23,7 @@ lookup(_, {node, {_, Val, _, _}}) ->
 
 list_keys({node, 'nil'}) ->
     [];
-list_keys({node, {Key, _, {node, 
-            'nil'}, {node, 'nil'}}}) ->
+list_keys({node, {Key, _, {node, 'nil'}, {node, 'nil'}}}) ->
     [Key];
 list_keys({node, {Key, _, Left, {node, 'nil'}}}) ->
     [Key|list_keys(Left)];
