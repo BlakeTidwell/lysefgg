@@ -26,7 +26,7 @@ sword(1) -> throw(slice);
 sword(2) -> erlang:error(cut_arm);
 sword(3) -> exit(cut_leg);
 sword(4) -> throw(punch);
-sword(5) -> exit(cross_brider).
+sword(5) -> exit(cross_bridge).
 
 black_knight(Attack) when is_function(Attack, 0) ->
     try Attack() of
